@@ -1,0 +1,565 @@
+html {
+  scroll-behavior: smooth;
+  background: white;
+}
+
+#loge {
+  margin-left: 150px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+#imageBox {
+  width: 70%;
+  height: 650px;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  opacity: 0;
+}
+
+#imageBox:nth-child(1) {
+  opacity: 1;
+}
+
+#imageBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-left {
+  position: absolute;
+  width: 35px;
+  height: 70px;
+  top: 272px;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  line-height: 70px;
+  font-size: 27px;
+}
+
+.box-left:hover {
+  background-color: #00000050;
+  color: #fff;
+}
+
+.box-right {
+  position: absolute;
+  width: 35px;
+  height: 70px;
+  top: 272px;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  line-height: 70px;
+  font-size: 27px;
+  right: 0;
+}
+
+.box-right:hover {
+  background-color: #00000050;
+  color: #fff;
+}
+
+.box-zhiding>ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.box-zhiding li {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #ccc;
+  float: left;
+  margin-right: 10px;
+}
+
+.box-zhiding li:hover {
+  background-color: #fff;
+}
+
+.box-zhiding {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+}
+
+.zjbs,
+.qyjs
+{
+  margin-top: 30px;
+  letter-spacing: 2px;
+  display: flex;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+
+.zjbs h3,
+.qyjs h3 {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+#left-box {
+  width: 200px;
+  height: 50px;
+  background-color: lightgray;
+}
+.black-box {
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  margin: 10px;
+  float: left;
+}
+#right-box {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  margin-left: 20px;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+}
+/* 新增以下样式 */
+.bigbox {
+  display: flex;
+  margin-top: 10px;
+  /* 根据需要调整这个外边距 */
+}
+
+.inner-box {
+  display: flex;
+  flex-direction: column;
+  /* 让 box1 和 box2 上下排列 */
+  width: 30%;
+  margin-left: 150px;
+}
+
+.dw1 {
+  left: 20px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-color: #000;
+  text-align: center;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dw2 {
+  right: 20px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-color: #000;
+  text-align: center;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mbp{
+  background-color: darkgray; 
+  width: 100%;
+}
+.box1 h1,
+.box2 h1,
+.box4 h1,
+.box5 h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.box1,
+.box2,
+.box4,
+.box5{
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  background-color: darkgray;
+  border-radius: 5%;
+  position: relative;
+  display: flex;
+}
+/* 新增以下样式 */
+.dw1::after {
+  content: "皇家马德里";
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dw2::after {
+  content: "皇家马德里";
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qdpm {
+  height: 845px;
+  width: 42%;
+  background: darkgray;
+  margin-left: 120px;
+  border-radius: 5%;
+  position: relative;
+  
+}
+
+.qdpm li{
+  line-height:150x;
+}
+.qdpm h3{
+  margin-left:50px;
+  margin-top:50px;
+}
+.mvp{
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  background-color: #000;
+  position: absolute;
+  border-radius: 0 0 5% 5%;
+}
+.dropdown {
+  margin-top: 100px;
+}
+.we{
+  letter-spacing: 2px;
+  display: flex;
+  position: relative;
+}
+.fk{
+  width: 40%;
+  background-color:  darkgray;
+  margin-top:10px ;
+  height: 800px;
+  margin-left: 150px;
+  border-radius: 5%;
+  overflow: auto;
+}
+/* .one{
+  width: 40%;
+  height: 10px;
+} */
+ .fk table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: auto;
+  }
+  .fk th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+  }
+  .mxqy {
+  height: 800px;
+  background: darkgray;
+  width: 35%;
+  margin-top: 10px;
+  margin-left: 80px;
+  border-radius: 5%;
+  position: relative;
+}
+.js{
+  position: absolute;
+  width: 100%;
+  border-radius: 0 0 5% 5%;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+}
+.js h2{
+  margin-left:50px ;
+  padding: 10px;
+}
+.js p{
+  padding: 10px;
+  text-align: justify;
+}
+.inner-box2 {
+  display: flex;
+  width: 100%;
+}
+
+.box3 {
+  height: 500px;
+  width: 80%;
+  background: darkgray;
+  border-radius: 5%;
+  margin-top: 20px;
+  margin-left: 150px;
+  position: relative;
+}
+.history{
+  width: 100%;
+  /* background-color: #00000050; */
+  position: absolute;
+  border-radius: 0 0 5% 5%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.history:hover{
+  opacity: 1;
+  background-color: #00000050;
+  color: #000;
+}
+.history h2{
+  padding: 10px;
+  margin-left: 50px;
+}
+.history p{
+  padding: 10px;
+  text-align: justify;
+  font-size:20px;
+}
+.mrt {
+  height: 500px;
+  width: 25%;
+  background: darkgray;
+  border-radius: 5%;
+  margin-top: 20px;
+  margin-right: 200px;
+  position: relative;
+}
+.lp{
+  position: absolute;
+  bottom: 0;
+  border-top:1px solid #ddd;
+  padding: 5px;
+}
+.lp h3{
+  padding: 10px;
+  margin-left: 50px;
+}
+.lp p{
+  padding: 10px;
+  text-align: justify;
+  font-size:20px;
+}
+.lsqx{
+  border-radius: 5% 5% 0 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 25px;
+  text-align: center;
+  padding:10px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 400px;
+}
+.qdpm table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  right: 0;
+}
+
+.qdpm th,
+td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+  height: 50px;
+}
+
+.qdpm th {
+  background-color: #333;
+}
+
+.qdpm tr:nth-child(even) {
+  background-color: #444;
+}
+
+.qdpm tr:nth-child(odd) {
+  background-color: #333;
+}
+
+@media screen and (max-width: 991px) {
+  #loge,
+ .zjbs h3 {
+    margin-left: 100px;
+    text-decoration: none;
+  }
+
+  #imageBox {
+    width: 100%;
+    height: 20%;
+  }
+
+ .bigbox,
+ .qyjs {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    /* 初始设置为列布局，先保证上下排列 */
+  }
+
+ .inner-box,
+ .qdpm,
+ .mrt,
+ .box3,
+ .mxqy,.fk {
+    width: 80%;
+    margin: 1px auto;
+  }
+
+ .dropdown {
+    margin: auto;
+  }
+
+ .box-zhiding li {
+    width: 9px;
+    height: 9px;
+    margin-right: 7px;
+  }
+
+ .box-right,
+ .box-left {
+    width: 30px;
+    height: 60px;
+    top: 200px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .history h2{
+    padding: 10px;
+    margin-left: 30px;
+  }
+  .history p{
+    padding: 8px;
+    text-align: justify;
+    font-size:15px;
+  }
+  /* .mxqy{
+    width: 100%;
+    margin: auto;
+    margin-left: 10px;
+  } */
+  .dropdown{
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #loge {
+    margin-left: 80px;
+    text-decoration: none;
+  }
+
+ .zjbs h3 {
+    margin-left: 60px;
+  }
+
+  #imageBox {
+    width: 100%;
+    height: 20%;
+  }
+
+ .bigbox,
+ .qyjs,
+ .bigbox2,
+ .inner-box2 {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    /* 初始设置为列布局，先保证上下排列 */
+  }
+
+ .inner-box,
+ .qdpm,
+ .mrt,
+ .box3,.mxqy,.fk{
+    width: 90%;
+    margin: 1px auto;
+  }
+
+ .dropdown {
+    margin: auto;
+  }
+
+ .box-zhiding li {
+    width: 5px;
+    height: 5px;
+    margin-right: 3px;
+  }
+
+ .box-right,
+ .box-left {
+    width: 25px;
+    height: 50px;
+    top: 120px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  /* .mxqy{
+    width: 100%;
+    margin: auto;
+    margin-left: 0;
+  } */
+
+}
+@media screen and (max-width: 768px) {
+  /* 选择包含球员介绍按钮和球队排名的共同父容器，如果有的话，这里假设它们都在类名为 one 的容器内 */
+ .one {
+    display: flex;
+    flex-direction: column; /* 设置为垂直排列方向 */
+  }
+  /* 如果球员介绍按钮所在的dropdown类元素有额外的样式影响布局，可按需调整 */
+ .qyjs.dropdown {
+    width: 100%; /* 可以让按钮宽度占满一行，根据实际情况看是否需要 */
+  }
+  /* 对于球队排名部分的样式调整，比如占满宽度等 */
+ .qdpm {
+    width: 100%;
+  }
+  .dropdown{
+    margin-bottom: 250px;
+  }
+}
