@@ -1,7 +1,17 @@
 const boxes = document.querySelectorAll('.box');
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
-let currentIndex = 0;
+const indexManager = {
+    currentIndex: 0,
+    updatePrevIndex() {
+        this.currentIndex = (this.currentIndex - 1 + boxes.length) % boxes.length;
+        return this.currentIndex;
+    },
+    updateNextIndex() {
+        this.currentIndex = (this.currentIndex + 1) % boxes.length;
+        return this.currentIndex;
+    }
+};
 
 function showBox(index) {
     boxes.forEach((box, i) => {
@@ -14,11 +24,11 @@ function showBox(index) {
 }
 
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + boxes.length) % boxes.length;
+    let currentIndex = indexManager.updatePrevIndex();
     showBox(currentIndex);
 });
 
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % boxes.length;
+    let currentIndex = indexManager.updateNextIndex();
     showBox(currentIndex);
 });
