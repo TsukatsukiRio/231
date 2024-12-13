@@ -137,6 +137,16 @@ html {
   /* 根据需要调整这个外边距 */
   position: relative;
 }
+  .bigbox {
+    display: flex;
+    margin-top: 10px;
+    /* 根据需要调整这个外边距 */
+    position: relative;
+    width: 90%; /* 这里假设设置一个合适的宽度，你可以根据实际需求调整 */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 .inner-box {
   display: flex;
@@ -332,7 +342,9 @@ html {
   border-radius: 40px;
   overflow: auto;
 }
-
+.llll{
+  width: 100%;
+}
 /* .one{
   width: 40%;
   height: 10px;
@@ -353,11 +365,11 @@ html {
 
 .fk th,
 td {
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   padding: 8px;
   text-align: left;
 }
-
 .mxqy {
   height: 800px;
   background: darkgray;
@@ -377,9 +389,8 @@ td {
   padding: 2px;
 }
 
-.js h2 {
+.js h3 {
   margin-left: 50px;
-  padding: 10px;
   letter-spacing: 2px;
 }
 
@@ -387,8 +398,19 @@ td {
   letter-spacing: 2px;
   text-align: justify;
   padding: 20px;
-  font-size: 18px;
-}
+  font-size: 14px;
+    max-height: 21em; /* 根据文本行高大致估算 11 行文本的高度，这里假设行高约为 1em，可根据实际情况调整 */
+    line-height: 1.2; /* 设置行高，可根据实际字体和设计需求调整 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 19;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: box;
+    box-orient: vertical;
+  }
+
 
 .inner-box2 {
   display: flex;
@@ -514,15 +536,15 @@ td {
   height: 50px;
 }
 
-.qdpm th {
+th {
   background-color: #333;
 }
 
-.qdpm tr:nth-child(even) {
+tr:nth-child(even) {
   background-color: #444;
 }
 
-.qdpm tr:nth-child(odd) {
+tr:nth-child(odd) {
   background-color: #333;
 }
 .clll{
@@ -660,11 +682,21 @@ button:hover {
   margin-left: 50px;
 }
 
-.box p {
-  padding: 10px;
-  text-align: justify;
-  font-size: 20px;
-}
+
+  .box p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* 这里先设置为 4 行，方便观察效果，后续会调整为 11 行 */
+    overflow: hidden;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: box;
+    box-orient: vertical;
+  }
+
 
 .mxqy-content {
   display: none;
